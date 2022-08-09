@@ -30,13 +30,16 @@ const Navbar = () => {
 
 export default Navbar;
 
-const NavContainer = styled.div`
+const NavContainer = styled.main`
 
-    
+    z-index: 100;
 `
 
 const Nav = styled.nav`
 
+// @media screen and (max-width: 1024px){
+//     position: absolute;
+// }
     height: 100px;
 
     display: flex;
@@ -69,7 +72,7 @@ const NavMenu = styled.div`
         span {
             font-size: 18px;
             font-weight: bold;
-            color: var(--darkGreen);
+            color: var(--lightGreen);
     
             letter-spacing: .5px;
             position: relative;
@@ -78,7 +81,7 @@ const NavMenu = styled.div`
                 content: "";
                 position: absolute;
                 height: 3px;
-                background-color: var(--darkGreen);
+                background-color: var(--lightGreen);
                 left: 0;
                 right: 0;
                 bottom: -6px;

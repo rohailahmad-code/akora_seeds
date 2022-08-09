@@ -18,7 +18,7 @@ const HeroSlider = () => {
     <Carousel {...settings}>
 
       <Wrap>
-        <img src="/images/bg-img-1.jpg" />
+        <img src="/images/bg-img-3.jpg" />
         <HeroText>
           <p>
             Doing <span>Agriculture</span> is not only a job, it is a passion
@@ -56,7 +56,7 @@ const HeroSlider = () => {
       </Wrap>
 
       <Wrap>
-        <img src="/images/bg-img-3.jpg" />
+        <img src="/images/bg-img-1.jpg" />
         <HeroText>
           <p>
             Doing <span>Agriculture</span> is not only a job, it is a passion
@@ -118,6 +118,7 @@ const HeroSlider = () => {
 export default HeroSlider;
 
 const Carousel = styled(Slider)`
+
   ul li button {
     &:before {
       font-size: 13px;
@@ -174,9 +175,14 @@ const Wrap = styled.div`
     left: 0;
     background-image: linear-gradient(
       to bottom right,
-      rgba(25, 111, 61, 0.2),
-      rgba(253, 183, 19, 0.2)
+      rgba(0, 0, 0, .5),
+      rgba(0, 0, 0, .5)
     );
+    // background-image: linear-gradient(
+    //   to bottom right
+    //   rgba(25, 111, 61, 0.2),
+    //   rgba(253, 183, 19, 0.2)
+    // );
   }
   
 `;
@@ -188,7 +194,7 @@ const HeroText = styled.div`
   left: 10%;
   p {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 900;
     width: 50%;
     color: white;
     
@@ -208,19 +214,21 @@ const HeroText = styled.div`
 const CTA = styled.div`
   display: flex;
   gap: 70px;
-  margin-left: 35px;
+  margin-left: 30px;
 `
 const ContactButton = styled.button`
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--lightGreen);
 
   background: rgba(0,0,0,0.2);
   outline: none;
-  border: 2px solid var(--lightGreen);
+  border: 1px solid var(--lightGreen);
   border-radius: 6px;
+
+  letter-spacing: 1.5px;
 
   cursor: pointer;
 
