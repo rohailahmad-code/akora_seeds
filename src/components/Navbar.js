@@ -34,7 +34,7 @@ const Navbar = () => {
                 <Logo className='Logo' src="/images/akora-seeds-logo.png" />
                 <NavMenu className='NavMenu' show={active}>
                     <CloseWrapper>
-                        <CustomClose className='CloseMenu' onClick={() => setActive(false)}/>
+                        <CustomClose sx={{ display: {md: 'none'} }} className='CloseMenu' onClick={() => setActive(false)}/>
                     </CloseWrapper>
                     <a>
                         <span>HOME</span>
@@ -52,7 +52,7 @@ const Navbar = () => {
                         <span>CONTACT</span>
                     </a>
                 </NavMenu>
-                <CustomMenu onClick={() => setActive(true)} />
+                <CustomMenu sx={{ display: {md: 'none'} }} onClick={() => setActive(true)} />
             </NavWrapper>
         </Nav>
     </NavContainer>
@@ -68,8 +68,8 @@ const NavContainer = styled.main`
     .navbar {
         position: fixed;
         left: 0;
-        top: 0;
         right: 0;
+        top: 0;
         z-index: 10;
     }
     
@@ -99,18 +99,20 @@ const NavContainer = styled.main`
         color: var(--heading);
     }
 
-    .navbar.active .NavMenu a {
-        border-bottom: 3px solid var(--heading);
-    }
+    
 
-    @media screen and (max-width: 1024px){
-        .navbar{
-            position: absolute;
-        }
-    }
+    // @media screen and (max-width: 1024px){
+    //     .navbar{
+    //         position: absolute;
+    //     }
+    // }
 
-    @media screen and (max-width: 968px){
+    @media screen and (max-width: 900px){
         height: 100%;
+
+        .navbar.active .NavMenu a {
+            border-bottom: 3px solid var(--heading);
+        }
     }
     
 `
@@ -123,9 +125,7 @@ const Nav = styled.nav`
 `
 
 const NavWrapper = styled.div`
-
     height: 100px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,7 +134,7 @@ const NavWrapper = styled.div`
     width: 100%;
     margin: 0 auto;
 
-     
+    z-index: 10;
      
 `
 
@@ -179,7 +179,7 @@ const NavMenu = styled.div`
         }
     }
 
-    @media screen and (max-width: 968px){
+    @media screen and (max-width: 900px){
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -217,6 +217,8 @@ const CustomMenu = styled(MenuIcon)`
     margin-right: 20px;
     cursor: pointer;
     transform: scale(1.3);
+
+    display: none;
 `
 
 const CloseWrapper = styled.div`
@@ -230,4 +232,6 @@ const CustomClose = styled(CloseIcon)`
     color: var(--lightGreen);
     transform: scale(1.3);
     cursor: pointer;
+
+    display: none;
 `

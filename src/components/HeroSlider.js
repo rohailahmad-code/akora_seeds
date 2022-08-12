@@ -119,7 +119,6 @@ const HeroSlider = () => {
 export default HeroSlider;
 
 const Carousel = styled(Slider)`
-
   ul li button {
     &:before {
       font-size: 13px;
@@ -134,10 +133,6 @@ const Carousel = styled(Slider)`
     top: -30px;
     color: var(--lightGreen);
     opacity: 1;
-  }
-
-  .slick-list {
-    overflow: visible;
   }
   button {
     z-index: 1;
@@ -157,7 +152,7 @@ const Carousel = styled(Slider)`
   .slick-next:before {
     color: var(--lightGreen);
   }
-`;
+`
 
 const Wrap = styled.div`
   position: relative;
@@ -250,7 +245,7 @@ const ContactButton = styled.button`
   letter-spacing: 1.5px;
 
   cursor: pointer;
-  z-index: -10;
+  
 
   transition: all .3s ease-in-out;
 
