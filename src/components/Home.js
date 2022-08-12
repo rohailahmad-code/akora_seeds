@@ -18,4 +18,5 @@ export default Home;
 
 const Container = styled.div`
     color: black;
+    position: relative;
 `

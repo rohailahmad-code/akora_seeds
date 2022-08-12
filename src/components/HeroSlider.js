@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const HeroSlider = () => {
   let settings = {
     dots: true,
@@ -209,12 +210,30 @@ const HeroText = styled.div`
       font-weight: bold;
     }
   }
+
+  @media screen and (max-width: 1024px){
+    top: 30%;
+    left: 10%;
+    p {
+      font-size: 26px;
+      width: 70%;
+  
+      span {
+        color: var(--lightGreen);
+        font-size: 38px;
+        font-weight: bold;
+      }
+    }
+  }
 `
 
 const CTA = styled.div`
   display: flex;
   gap: 70px;
   margin-left: 30px;
+
+  
+
 `
 const ContactButton = styled.button`
   padding: 6px 12px;
@@ -231,12 +250,19 @@ const ContactButton = styled.button`
   letter-spacing: 1.5px;
 
   cursor: pointer;
+  z-index: -10;
 
   transition: all .3s ease-in-out;
 
   &:hover {
     background: var(--lightGreen);
     color: var(--darkGreen)
+  }
+
+  @media screen and (max-width: 1024px){
+    padding: 5px 10px;
+    font-size: 10px;
+    letter-spacing: 1.2px;
   }
 
 `
