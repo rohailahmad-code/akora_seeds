@@ -39,10 +39,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -59,10 +59,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -79,10 +79,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -99,10 +99,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -119,10 +119,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -139,10 +139,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -159,10 +159,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -179,10 +179,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
 
@@ -199,10 +199,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
             <Wrap>
@@ -218,10 +218,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
-                  </CardText>
-                  <ReadMore>
-                    <CustomArrowIcon className="CustomArrowIcon" />
-                  </ReadMore>
+                </CardText>
+                <ReadMore>
+                  <CustomArrowIcon className="CustomArrowIcon" />
+                </ReadMore>
               </Card>
             </Wrap>
           </Carousel>
@@ -234,22 +234,24 @@ const ProductsSection = () => {
 export default ProductsSection;
 
 const ProductsContainer = styled.div`
-  margin: 150px 0 200px 0;
-  //   padding: 250px 0 100px;
+  padding: 100px 0;
   position: relative;
 `;
 const ProductsBackground = styled.div`
-  //   background-image: url(/images/bg-img-3.jpg);
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  background: #3c3b3f;
-  background: -webkit-linear-gradient(to left, #605c3c, #3c3b3f);
-  background: linear-gradient(to left, #605c3c, #3c3b3f);
+  background-image: url(/images/leaves.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //   background: #3c3b3f;
+  //   background: -webkit-linear-gradient(to left, #605c3c, #3c3b3f);
+  //   background: linear-gradient(to left, #605c3c, #3c3b3f);
   position: absolute;
-  top: 300px;
+  top: 450px;
+  //   top: 250px;
   left: 0;
   right: 0;
-  height: 400px;
+  height: 250px;
+  //   height: 400px;
 `;
 
 const Products = styled.div`
@@ -259,7 +261,7 @@ const Products = styled.div`
 `;
 
 const Heading = styled.div`
-  margin: 50px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   h1 {
@@ -343,36 +345,36 @@ const Card = styled.div`
 `;
 
 const CardText = styled.div`
-    overflow-Y: scroll;
-    overflow-X: hidden;
-    height: 250px;
-    padding: 20px;
-    position: relative;
-    :hover::-webkit-scrollbar{
-        width: 6px;
-   }
-   ::-webkit-scrollbar {
-        width: 4px;
-   }
-   ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-   }   
-   ::-webkit-scrollbar-thumb {
-        background: #888; 
-   }
-   ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-   }
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 250px;
+  padding: 20px;
+  position: relative;
+  :hover::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
-    h2 {
-        color: var(--heading);
-        margin: 0;
-    }
-    p {
-        line-height: 1.4;
-        letter-spacing: 0.2px;
-        margin: 10px 0 0 0;
-    }
+  h2 {
+    color: var(--heading);
+    margin: 0;
+  }
+  p {
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    margin: 10px 0 0 0;
+  }
 `;
 
 const ReadMore = styled.button`

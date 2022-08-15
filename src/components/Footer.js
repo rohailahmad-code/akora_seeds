@@ -85,15 +85,15 @@ const Footer = () => {
             <Links>
               <a>
                 <CustomPhoneIcon />
-                <span> (0923) 633265</span>
+                <span> 0923 633265</span>
               </a>
               <a>
                 <CustomEmailIcon />
-                <span>as_seeds2006@yahoo.com</span>
+                <span>akora.seeds@gmail.com</span>
               </a>
               <a>
                 <CustomLocationIcon />
-                <span>Main GT Road Opp Komi Bachat Bank Akora Khattak</span>
+                <span>Qazi Mashood Plaza, G.T Road, Akora Khattak, KPK, Pakistan.</span>
               </a>
               <Contact>
                 <span>For further information and enquiries.<a href="#">Contact US</a></span>
@@ -135,6 +135,7 @@ const FooterContainer = styled.div`
   background-size: cover;
 
   padding: 0 20px;
+  margin-top: 100px;
 `;
 
 const FooterWrap = styled.div`

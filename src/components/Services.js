@@ -3,76 +3,83 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <ServicesContiner>
+    <MainContainer>
+      <ServicesContiner>
 
-      <Heading>
-        <h1>Services</h1>
-      </Heading>
+        <Heading>
+          <h1>Services</h1>
+        </Heading>
 
-      <Wrap>
-        <QualitySeeds>
-          <Image>
-            <img src="/images/bg-img-2.jpg" alt="" />
-          </Image>
-          <Text>
-            <h2>Quality Seeds</h2>
-            <p>
-            Commitment for provision of quality seed at affordable price
-            Commitment for provision of quality seed at affordable price
-            Commitment for provision of quality seed at affordable price
-            Commitment for provision of quality seed at affordable price
-            Commitment for provision of quality seed at affordable price
-            </p>
-          </Text>
-        </QualitySeeds>
+        <Wrap>
+          <QualitySeeds>
+            <Image>
+              <img src="/images/bg-img-2.jpg" alt="" />
+            </Image>
+            <Text>
+              <h2>Quality Seeds</h2>
+              <p>
+              Commitment for provision of quality seed at affordable price
+              Commitment for provision of quality seed at affordable price
+              Commitment for provision of quality seed at affordable price
+              Commitment for provision of quality seed at affordable price
+              Commitment for provision of quality seed at affordable price
+              </p>
+            </Text>
+          </QualitySeeds>
 
-        <CertifiedProducts>
-          <Image className="CertifiedProductsImg">
-            <img src="/images/bg-img-3.jpg" alt="" />
-          </Image>
-          <Text>
-            <h2>Certified Products</h2>
-            <p>
-            Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
-            Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
-            Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
-            Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
-            </p>
-          </Text>
-        </CertifiedProducts>
+          <CertifiedProducts>
+            <Image className="CertifiedProductsImg">
+              <img src="/images/bg-img-3.jpg" alt="" />
+            </Image>
+            <Text>
+              <h2>Certified Products</h2>
+              <p>
+              Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
+              Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
+              Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
+              Supply the seed to farmers: What they need? What they expect? What is the demand of seed industry?
+              </p>
+            </Text>
+          </CertifiedProducts>
 
-        <Distributer>
-          <Image>
-            <img src="/images/bg-img-4.jpg" alt="" />
-          </Image>
-          <Text>
-            <h2>Distributer</h2>
-            <p>
-            To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
-            To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
-            To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
-            To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
-            </p>
-          </Text>
-        </Distributer>
-      </Wrap>
+          <Distributer>
+            <Image>
+              <img src="/images/bg-img-4.jpg" alt="" />
+            </Image>
+            <Text>
+              <h2>Distributer</h2>
+              <p>
+              To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
+              To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
+              To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
+              To touch the inner core of heart of farmers, dealers and distributers with sincerity, devotion and dedication in services
+              </p>
+            </Text>
+          </Distributer>
+        </Wrap>
 
-      
+        
 
-    </ServicesContiner>
+      </ServicesContiner>
+    </MainContainer>
   );
 };
 
 export default Services;
 
+const MainContainer = styled.div`
+  border-bottom: 1px solid var(--heading);
+`
+
 const ServicesContiner = styled.main`
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+  padding: 100px 0;
 `
 
 const Heading = styled.div`
-  padding: 50px 0;
+  // padding: 50px 0;
   display: flex;
   justify-content: center;
   h1{

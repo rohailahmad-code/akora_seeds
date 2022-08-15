@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -12,7 +13,7 @@ const Navbar = () => {
     // Changing Navbar Background Color on Scroll
 
     const changeBackground = () => {
-        if (window.scrollY >= 500) {
+        if (window.scrollY >= 400) {
             setNavbar(true);
         } else {
             setNavbar(false);
@@ -27,26 +28,28 @@ const Navbar = () => {
     <NavContainer >
         <Nav className={navbar ? 'navbar active' : 'navbar'}>
             <NavWrapper className='NavWrapper'>
-                <Logo className='Logo' src="/images/akora-seeds-logo.png" />
+                <Link to="/">
+                    <Logo className='Logo' src="/images/akora-seeds-logo.png" />
+                </Link>
                 <NavMenu className='NavMenu' show={active}>
                     <CloseWrapper>
                         <CustomClose sx={{ display: {md: 'none'} }} className='CloseMenu' onClick={() => setActive(false)}/>
                     </CloseWrapper>
-                    <a>
+                    <Link className='a' to="/">
                         <span>HOME</span>
-                    </a>
-                    <a>
+                    </Link>
+                    <Link className='a' to="/about">
                         <span>ABOUT US</span>
-                    </a>
-                    <a>
+                    </Link>
+                    <Link className='a' to="/products">
                         <span>PRODUCTS</span>
-                    </a>
-                    <a>
+                    </Link>
+                    <Link className='a' to="/events">
                         <span>EVENTS</span>
-                    </a>
-                    <a>
+                    </Link>
+                    <Link className='a' to="/contact">
                         <span>CONTACT</span>
-                    </a>
+                    </Link>
                 </NavMenu>
                 <CustomMenu sx={{ display: {md: 'none'} }} onClick={() => setActive(true)} />
             </NavWrapper>
@@ -141,9 +144,10 @@ const Logo = styled.img`
 `
 
 const NavMenu = styled.div`
-    a {
+    .a {
         padding: 0 16px;
         cursor: pointer;
+        text-decoration: none;
         
         span {
             font-size: 18px;
@@ -192,7 +196,7 @@ const NavMenu = styled.div`
 
         z-index: 1;
 
-        a{
+        .a{
             margin: 0 20px;
             padding: 30px 0;
             border-bottom: 3px solid var(--lightGreen);
