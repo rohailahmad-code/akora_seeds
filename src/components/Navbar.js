@@ -21,10 +21,6 @@ const Navbar = () => {
 
     window.addEventListener('scroll', changeBackground);
 
-    // Toggle Hamburger Menu
-
-
-
 
 
   return (
@@ -71,6 +67,7 @@ const NavContainer = styled.main`
         right: 0;
         top: 0;
         z-index: 10;
+        padding: 0 20px;
     }
     
     .navbar.active{
@@ -91,6 +88,7 @@ const NavContainer = styled.main`
         color: var(--heading);
 
         &:after {
+            bottom: -15.5px;
             background-color: var(--heading);
         }
     }
@@ -116,8 +114,6 @@ const NavContainer = styled.main`
     }
     
 `
-
-
 
 const Nav = styled.nav`
 

@@ -32,15 +32,17 @@ const ProductsSection = () => {
                 <CardText>
                   <h2>Melon Collection</h2>
                   <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                     soluta vero adipisci quos. Repudiandae nulla dignissimos ex
                     aspernatur animi blanditiis hic reiciendis id nesciunt ab
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
+                  </CardText>
                   <ReadMore>
                     <CustomArrowIcon className="CustomArrowIcon" />
                   </ReadMore>
-                </CardText>
               </Card>
             </Wrap>
 
@@ -57,10 +59,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
+                  </CardText>
                   <ReadMore>
                     <CustomArrowIcon className="CustomArrowIcon" />
                   </ReadMore>
-                </CardText>
               </Card>
             </Wrap>
 
@@ -77,10 +79,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
+                  </CardText>
                   <ReadMore>
                     <CustomArrowIcon className="CustomArrowIcon" />
                   </ReadMore>
-                </CardText>
               </Card>
             </Wrap>
 
@@ -97,10 +99,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
+                  </CardText>
                   <ReadMore>
                     <CustomArrowIcon className="CustomArrowIcon" />
                   </ReadMore>
-                </CardText>
               </Card>
             </Wrap>
 
@@ -117,10 +119,10 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
+                  </CardText>
                   <ReadMore>
                     <CustomArrowIcon className="CustomArrowIcon" />
                   </ReadMore>
-                </CardText>
               </Card>
             </Wrap>
 
@@ -137,74 +139,91 @@ const ProductsSection = () => {
                     nostrum est, eaque odio iure inventore eligendi nobis,
                     optio, amet nisi quas ratione ut! Tenetur, et cumque?
                   </p>
+                  </CardText>
                   <ReadMore>
                     <CustomArrowIcon className="CustomArrowIcon" />
                   </ReadMore>
-                </CardText>
               </Card>
             </Wrap>
 
             <Wrap>
-            <Card>
-              <img src="/images/Hot Pepper 2.jpg" alt="" />
-              <CardText>
-                <h2>Hot Pepper Collection</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, sed fuga! At neque dolores sint, quibusdam vitae
-                  soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis,
-                  optio, amet nisi quas ratione ut! Tenetur, et cumque?
-                </p>
-                <ReadMore>
-                  <CustomArrowIcon className="CustomArrowIcon" />
-                </ReadMore>
-              </CardText>
-            </Card>
-          </Wrap>
+              <Card>
+                <img src="/images/Hot Pepper 2.jpg" alt="" />
+                <CardText>
+                  <h2>Hot Pepper Collection</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, sed fuga! At neque dolores sint, quibusdam vitae
+                    soluta vero adipisci quos. Repudiandae nulla dignissimos ex
+                    aspernatur animi blanditiis hic reiciendis id nesciunt ab
+                    nostrum est, eaque odio iure inventore eligendi nobis,
+                    optio, amet nisi quas ratione ut! Tenetur, et cumque?
+                  </p>
+                  </CardText>
+                  <ReadMore>
+                    <CustomArrowIcon className="CustomArrowIcon" />
+                  </ReadMore>
+              </Card>
+            </Wrap>
 
-          <Wrap>
-          <Card>
-            <img src="/images/Determinate Tomato.jpg" alt="" />
-            <CardText>
-              <h2>Tomato Collection</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, sed fuga! At neque dolores sint, quibusdam vitae
-                soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                nostrum est, eaque odio iure inventore eligendi nobis,
-                optio, amet nisi quas ratione ut! Tenetur, et cumque?
-              </p>
-              <ReadMore>
-                <CustomArrowIcon className="CustomArrowIcon" />
-              </ReadMore>
-            </CardText>
-          </Card>
-        </Wrap>
+            <Wrap>
+              <Card>
+                <img src="/images/Determinate Tomato.jpg" alt="" />
+                <CardText>
+                  <h2>Tomato Collection</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, sed fuga! At neque dolores sint, quibusdam vitae
+                    soluta vero adipisci quos. Repudiandae nulla dignissimos ex
+                    aspernatur animi blanditiis hic reiciendis id nesciunt ab
+                    nostrum est, eaque odio iure inventore eligendi nobis,
+                    optio, amet nisi quas ratione ut! Tenetur, et cumque?
+                  </p>
+                  </CardText>
+                  <ReadMore>
+                    <CustomArrowIcon className="CustomArrowIcon" />
+                  </ReadMore>
+              </Card>
+            </Wrap>
 
-        <Wrap>
-        <Card>
-          <img src="/images/Watermelon.jpg" alt="" />
-          <CardText>
-            <h2>Watermelon Collection</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Impedit, sed fuga! At neque dolores sint, quibusdam vitae
-              soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-              aspernatur animi blanditiis hic reiciendis id nesciunt ab
-              nostrum est, eaque odio iure inventore eligendi nobis,
-              optio, amet nisi quas ratione ut! Tenetur, et cumque?
-            </p>
-            <ReadMore>
-              <CustomArrowIcon className="CustomArrowIcon" />
-            </ReadMore>
-          </CardText>
-        </Card>
-      </Wrap>
-
-
+            <Wrap>
+              <Card>
+                <img src="/images/Watermelon.jpg" alt="" />
+                <CardText>
+                  <h2>Watermelon Collection</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, sed fuga! At neque dolores sint, quibusdam vitae
+                    soluta vero adipisci quos. Repudiandae nulla dignissimos ex
+                    aspernatur animi blanditiis hic reiciendis id nesciunt ab
+                    nostrum est, eaque odio iure inventore eligendi nobis,
+                    optio, amet nisi quas ratione ut! Tenetur, et cumque?
+                  </p>
+                  </CardText>
+                  <ReadMore>
+                    <CustomArrowIcon className="CustomArrowIcon" />
+                  </ReadMore>
+              </Card>
+            </Wrap>
+            <Wrap>
+              <Card>
+                <img src="/images/Squash Long.jpg" alt="" />
+                <CardText>
+                  <h2>Squash Collection</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit, sed fuga! At neque dolores sint, quibusdam vitae
+                    soluta vero adipisci quos. Repudiandae nulla dignissimos ex
+                    aspernatur animi blanditiis hic reiciendis id nesciunt ab
+                    nostrum est, eaque odio iure inventore eligendi nobis,
+                    optio, amet nisi quas ratione ut! Tenetur, et cumque?
+                  </p>
+                  </CardText>
+                  <ReadMore>
+                    <CustomArrowIcon className="CustomArrowIcon" />
+                  </ReadMore>
+              </Card>
+            </Wrap>
           </Carousel>
         </Products>
       </ProductsContainer>
@@ -266,13 +285,13 @@ const Heading = styled.div`
 `;
 
 const Carousel = styled(Slider)`
-width: 90%!important;
-margin: 0 auto;
-  ul li button {
+    width: 90%!important;
+    margin: 0 auto;
+    ul li button {
     &:before {
       font-size: 10px;
       color: var(--heading);
-      top: 30px;
+      top: 20px;
       opacity: 0.6;
     }
   }
@@ -280,7 +299,7 @@ margin: 0 auto;
   li.slick-active button::before {
     font-size: 15px;
     color: var(--heading);
-    top: 30px;
+    top: 20px;
     opacity: 1;
   }
   button {
@@ -319,21 +338,41 @@ const Wrap = styled.div`
 const Card = styled.div`
   margin: 0 20px;
   background: white;
+  position: relative;
+  overflow: hidden;
 `;
 
 const CardText = styled.div`
-  overflow: hidden;
-  height: 300px;
-  padding: 20px;
-  position: relative;
+    overflow-Y: scroll;
+    overflow-X: hidden;
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    :hover::-webkit-scrollbar{
+        width: 6px;
+   }
+   ::-webkit-scrollbar {
+        width: 4px;
+   }
+   ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+   }   
+   ::-webkit-scrollbar-thumb {
+        background: #888; 
+   }
+   ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+   }
 
-  h2 {
-    color: var(--heading);
-  }
-  p {
-    line-height: 1.4;
-    letter-spacing: 0.2px;
-  }
+    h2 {
+        color: var(--heading);
+        margin: 0;
+    }
+    p {
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+        margin: 10px 0 0 0;
+    }
 `;
 
 const ReadMore = styled.button`
@@ -354,13 +393,13 @@ const ReadMore = styled.button`
   &:hover {
     background: none;
 
-    .CustomArrowIcon{
-        color: var(--heading);
+    .CustomArrowIcon {
+      color: var(--heading);
     }
   }
 `;
 
 const CustomArrowIcon = styled(ArrowForwardIcon)`
   color: white;
-  transform: scale(.7)
+  transform: scale(0.7);
 `;
