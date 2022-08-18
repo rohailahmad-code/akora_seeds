@@ -6,6 +6,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <React.Fragment>
@@ -23,30 +25,30 @@ const Footer = () => {
           <LinksWrap>
             <h3>Explore</h3>
             <Links>
-              <a>
+              <Link to="/about/our-company-profile">
                 <CustomSpaIcon className="SpaIcon" />
                 <span>About</span>
-              </a>
-              <a>
+              </Link>
+              <Link to="/about/a-word-from-our-ceo">
                 <CustomSpaIcon className="SpaIcon" />
                 <span>A word from our CEO</span>
-              </a>
-              <a>
+              </Link>
+              <Link to="/about/our-team">
                 <CustomSpaIcon className="SpaIcon" />
                 <span>Our Team</span>
-              </a>
-              <a>
+              </Link>
+              <Link to="/about/our-mission">
                 <CustomSpaIcon className="SpaIcon" />
                 <span>Our Mission</span>
-              </a>
-              <a>
+              </Link>
+              <Link to="/about/our-history">
                 <CustomSpaIcon className="SpaIcon" />
                 <span>Our History</span>
-              </a>
-              <a>
+              </Link>
+              <Link to="/events">
                 <CustomSpaIcon className="SpaIcon" />
                 <span>News and Events</span>
-              </a>
+              </Link>
             </Links>
           </LinksWrap>
 
@@ -93,10 +95,15 @@ const Footer = () => {
               </a>
               <a>
                 <CustomLocationIcon />
-                <span>Qazi Mashood Plaza, G.T Road, Akora Khattak, KPK, Pakistan.</span>
+                <span>
+                  Qazi Mashood Plaza, G.T Road, Akora Khattak, KPK, Pakistan.
+                </span>
               </a>
               <Contact>
-                <span>For further information and enquiries.<a href="#">Contact US</a></span>
+                <span>
+                  For further information and enquiries.
+                  <a href="#">Contact US</a>
+                </span>
               </Contact>
             </Links>
           </LinksWrap>
@@ -104,20 +111,22 @@ const Footer = () => {
       </FooterContainer>
       <CopyrightContainer>
         <Copyright>
-            <Left>
+          <Left>
             <span>Copyright &copy; 2022 Akora Seeds. All Right Reserved.</span>
-            </Left>
-            <Middle>
-                <span>Develop by <a href="#">Rohail Ahmad</a></span>
-            </Middle>
-            <Right>
+          </Left>
+          <Middle>
+            <span>
+              Develop by <a href="#">Rohail Ahmad</a>
+            </span>
+          </Middle>
+          <Right>
             <a>
-                <span>Terms and Conditions</span>
+              <span>Terms and Conditions</span>
             </a>
             <a>
-                <span>Privacy Policy</span>
+              <span>Privacy Policy</span>
             </a>
-            </Right>
+          </Right>
         </Copyright>
       </CopyrightContainer>
     </React.Fragment>
@@ -192,6 +201,7 @@ const Links = styled.div`
   align-self: start;
 
   a {
+    text-decoration: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -235,14 +245,13 @@ const CustomLocationIcon = styled(LocationOnIcon)`
   margin-right: 10px;
 `;
 
-
 const CopyrightContainer = styled.div`
-background: #3c3b3f;
-background: -webkit-linear-gradient(to left, #605c3c, #3c3b3f);
-background: linear-gradient(to left, #605c3c, #3c3b3f);
+  background: #3c3b3f;
+  background: -webkit-linear-gradient(to left, #605c3c, #3c3b3f);
+  background: linear-gradient(to left, #605c3c, #3c3b3f);
 
-padding: 0 20px;
-`
+  padding: 0 20px;
+`;
 
 const Copyright = styled.div`
   max-width: 1440px;
@@ -254,44 +263,44 @@ const Copyright = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 
 const Left = styled.div`
   span {
     color: var(--lightGreen);
   }
-`
+`;
 
 const Middle = styled.div`
-    span {
-        color: var(--lightGreen);
+  span {
+    color: var(--lightGreen);
 
-        a {
-            text-decoration: none;
-            color: var(--lightGreen);
-        }
+    a {
+      text-decoration: none;
+      color: var(--lightGreen);
     }
-`
+  }
+`;
 
 const Right = styled.div`
   a {
     margin-left: 20px;
     cursor: pointer;
     span {
-        color: var(--lightGreen);
+      color: var(--lightGreen);
     }
   }
-`
+`;
 
 const Contact = styled.div`
-    margin-top: 30px;
-    span {
-        color: white;
-        a {
-            text-decoration: none;
-            color: var(--lightGreen);
-            letter-spacing: 1.2px;
-            font-weight: 600;
-        }
+  margin-top: 30px;
+  span {
+    color: white;
+    a {
+      text-decoration: none;
+      color: var(--lightGreen);
+      letter-spacing: 1.2px;
+      font-weight: 600;
+    }
   }
-`
+`;

@@ -1,3 +1,21 @@
+
+#root {
+  /* Font Family */
+
+  font-family: Eurostile;
+
+  /* Colors */
+
+  --heading : #ec7f29;
+  --darkGreen:  #196F3D;
+  --lightGreen:  #b2fc1d;
+
+  --secondaryText: rgb(190, 189, 189);
+  
+  --color: rgba(128, 128, 128, 0.326);
+  --green:  #196f3d4f;
+
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,21 +34,9 @@ body {
   src: url(../public/fonts/Gilroy-Light.otf);
  }
 
-
-#root {
-  /* Font Family */
-
-  font-family: Eurostile;
-
-  /* Colors */
-
-  --heading : #ec7f29;
-  --darkGreen:  #196F3D;
-  --lightGreen:  #b2fc1d;
-  
-  color: rgba(128, 128, 128, 0.326);
-  --green:  #196f3d4f;
+ @font-face {
+  font-family: GilroyBold;
+  src: url(../public/fonts/Gilroy-ExtraBold.otf);
+ }
 
 
-
-}

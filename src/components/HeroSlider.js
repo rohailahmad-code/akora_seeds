@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { Link } from "react-router-dom";
 
 const HeroSlider = () => {
   let settings = {
@@ -17,7 +18,6 @@ const HeroSlider = () => {
 
   return (
     <Carousel {...settings}>
-
       <Wrap>
         <img src="/images/bg-img-3.jpg" />
         <HeroText>
@@ -28,10 +28,14 @@ const HeroSlider = () => {
           </p>
           <CTA>
             <ContactButton>
-              <span>Contact Us</span>
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
             </ContactButton>
             <ReadMoreButton>
-              <span>Read More</span>
+              <Link to="/about/a-word-from-our-ceo">
+                <span>Read More</span>
+              </Link>
             </ReadMoreButton>
           </CTA>
         </HeroText>
@@ -47,10 +51,14 @@ const HeroSlider = () => {
           </p>
           <CTA>
             <ContactButton>
-              <span>Contact Us</span>
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
             </ContactButton>
             <ReadMoreButton>
-              <span>Read More</span>
+              <Link to="/about/a-word-from-our-ceo">
+                <span>Read More</span>
+              </Link>
             </ReadMoreButton>
           </CTA>
         </HeroText>
@@ -66,10 +74,14 @@ const HeroSlider = () => {
           </p>
           <CTA>
             <ContactButton>
-              <span>Contact Us</span>
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
             </ContactButton>
             <ReadMoreButton>
-              <span>Read More</span>
+              <Link to="/about/a-word-from-our-ceo">
+                <span>Read More</span>
+              </Link>
             </ReadMoreButton>
           </CTA>
         </HeroText>
@@ -85,31 +97,39 @@ const HeroSlider = () => {
           </p>
           <CTA>
             <ContactButton>
-              <span>Contact Us</span>
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
             </ContactButton>
             <ReadMoreButton>
-              <span>Read More</span>
+              <Link to="/about/a-word-from-our-ceo">
+                <span>Read More</span>
+              </Link>
             </ReadMoreButton>
           </CTA>
         </HeroText>
       </Wrap>
 
       <Wrap>
-      <img src="/images/bg-img-5.jpg" />
+        <img src="/images/bg-img-5.jpg" />
         <HeroText>
-        <p>
-          Doing <span>Agriculture</span> is not only a job, it is a passion
-          too, because it is a source of food for humanity, and luckily we are
-          been selected for this good cause.......
-        </p>
-        <CTA>
-          <ContactButton>
-            <span>Contact Us</span>
-          </ContactButton>
-          <ReadMoreButton>
-            <span>Read More</span>
-          </ReadMoreButton>
-        </CTA>
+          <p>
+            Doing <span>Agriculture</span> is not only a job, it is a passion
+            too, because it is a source of food for humanity, and luckily we are
+            been selected for this good cause.......
+          </p>
+          <CTA>
+            <ContactButton>
+              <Link to="/contact">
+                <span>Contact Us</span>
+              </Link>
+            </ContactButton>
+            <ReadMoreButton>
+              <Link to="/about/a-word-from-our-ceo">
+                <span>Read More</span>
+              </Link>
+            </ReadMoreButton>
+          </CTA>
         </HeroText>
       </Wrap>
     </Carousel>
@@ -152,7 +172,7 @@ const Carousel = styled(Slider)`
   .slick-next:before {
     color: var(--lightGreen);
   }
-`
+`;
 
 const Wrap = styled.div`
   position: relative;
@@ -171,8 +191,8 @@ const Wrap = styled.div`
     left: 0;
     background-image: linear-gradient(
       to bottom right,
-      rgba(0, 0, 0, .5),
-      rgba(0, 0, 0, .5)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     );
     // background-image: linear-gradient(
     //   to bottom right
@@ -180,9 +200,7 @@ const Wrap = styled.div`
     //   rgba(253, 183, 19, 0.2)
     // );
   }
-  
 `;
-
 
 const HeroText = styled.div`
   position: absolute;
@@ -193,7 +211,7 @@ const HeroText = styled.div`
     font-weight: 900;
     width: 50%;
     color: white;
-    
+
     text-transform: uppercase;
 
     line-height: 1.7;
@@ -206,13 +224,13 @@ const HeroText = styled.div`
     }
   }
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     top: 30%;
     left: 10%;
     p {
       font-size: 26px;
       width: 70%;
-  
+
       span {
         color: var(--lightGreen);
         font-size: 38px;
@@ -220,24 +238,24 @@ const HeroText = styled.div`
       }
     }
   }
-`
+`;
 
 const CTA = styled.div`
   display: flex;
   gap: 70px;
   margin-left: 30px;
-
-  
-
-`
+`;
 const ContactButton = styled.button`
-  padding: 6px 12px;
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--lightGreen);
+  a {
+    text-decoration: none;
 
-  background: rgba(0,0,0,0.2);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--lightGreen);
+  }
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.2);
   outline: none;
   border: 1px solid var(--lightGreen);
   border-radius: 6px;
@@ -245,28 +263,21 @@ const ContactButton = styled.button`
   letter-spacing: 1.5px;
 
   cursor: pointer;
-  
 
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background: var(--lightGreen);
-    color: var(--darkGreen)
+    a {
+      color: var(--darkGreen);
+    }
   }
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     padding: 5px 10px;
     font-size: 10px;
     letter-spacing: 1.2px;
   }
+`;
 
-`
-
-const ReadMoreButton = styled(ContactButton)`
-
-`
-
-
-
-
-
+const ReadMoreButton = styled(ContactButton)``;
