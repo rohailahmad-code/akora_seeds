@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <React.Fragment>
-      <Viewer />
+      <Viewer heading="About Us" />
       <ViewerContainer>
         <Wrapper>
           <Data>

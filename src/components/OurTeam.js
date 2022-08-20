@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import TabViewer from './TabViewer';
+import React from "react";
+import styled from "styled-components";
+import TabViewer from "./TabViewer";
 
 const OurTeam = () => {
   return (
@@ -9,63 +9,87 @@ const OurTeam = () => {
         <TabViewer title="Our Team" />
         <DataContainer>
           <ManagingDirector>
-            <img src="/images/profile-img.png" alt="" />
+            <Image>
+              <img src="/images/profile-img.png" alt="" />
+            </Image>
             <h2>Mr. Muhammad Siddique</h2>
             <span>Managing Director</span>
           </ManagingDirector>
           <Wrapper>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Mr. Javed Iqbal</h2>
               <span>Marketing Director</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Mr. Hameed Ullah </h2>
               <span>Finance Director</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Dr Muhammad Sajjad</h2>
-              <span>Manager  B & R</span>
+              <span>Manager B & R</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Dr Zahid</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
             <Profile>
-              <img src="/images/profile-img.png" alt="" />
+              <Image>
+                <img src="/images/profile-img.png" alt="" />
+              </Image>
               <h2>Profile Name</h2>
               <span>Designation</span>
             </Profile>
@@ -73,34 +97,29 @@ const OurTeam = () => {
         </DataContainer>
       </Container>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default OurTeam
+export default OurTeam;
 
 const Container = styled.div`
   background: rgb(248, 248, 248);
-`
+`;
 
 const DataContainer = styled.div`
   max-width: 1440px;
   width: 100%;
   margin: auto;
   padding: 50px 0;
-`
+`;
 
 const ManagingDirector = styled.div`
-display:flex;
-flex-direction: column;
-align-items: center;
-padding: 30px 0;
-  img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 3px solid var(--heading);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  overflow: hidden;
+
   h2 {
     color: var(--heading);
   }
@@ -112,7 +131,26 @@ padding: 30px 0;
     letter-spacing: 1px;
     color: grey;
   }
-`
+`;
+
+const Image = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 3px solid var(--heading);
+  overflow: hidden;
+  img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+`;
 
 const Wrapper = styled.div`
   display: grid;
@@ -120,7 +158,7 @@ const Wrapper = styled.div`
   justify-items: center;
   grid-template-columns: repeat(6, 1fr);
   row-gap: 50px;
-`
+`;
 
 const Profile = styled.div`
   text-align: center;
@@ -128,9 +166,6 @@ const Profile = styled.div`
   img {
     width: 350px;
     height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 3px solid var(--heading);
   }
   &:first-child {
     grid-column: 1 / 4;
@@ -150,5 +185,4 @@ const Profile = styled.div`
     letter-spacing: 1px;
     color: grey;
   }
-`
-
+`;

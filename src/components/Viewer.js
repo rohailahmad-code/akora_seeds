@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Viewer = () => {
+const Viewer = (props) => {
   return (
     <React.Fragment>
       <ViewerContainer>
         <Image>
-          <h1>About Us</h1>
+          <h1>{props.heading}</h1>
         </Image>
       </ViewerContainer>
     </React.Fragment>
@@ -18,7 +18,7 @@ export default Viewer;
 const ViewerContainer = styled.div``;
 
 const Image = styled.div`
-  background-image: url(/images/bg-img-3.jpg),
+  background-image: url(/images/bg-img-1.jpg),
     -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: color;
   background-position: center;

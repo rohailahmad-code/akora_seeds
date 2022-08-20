@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
+import Footer from "../components/Footer";
+import Viewer from "../components/Viewer";
 
-const Event = () => {
+const Event = (props) => {
   return (
-    <div>Event</div>
-  )
-}
+    <React.Fragment>
+      <Viewer heading="Events" />
+      <Footer />
+    </React.Fragment>
+  );
+};
 
-export default Event
+export default Event;
