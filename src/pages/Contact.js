@@ -7,7 +7,7 @@ import ContactComp from "../components/ContactComp";
 const Contact = () => {
   return (
     <React.Fragment>
-      <Viewer heading="Contact Us" />
+      <Viewer heading="Get in touch" />
       <ContactComp />
       <Footer />
     </React.Fragment>

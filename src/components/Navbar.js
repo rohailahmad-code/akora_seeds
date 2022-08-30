@@ -35,19 +35,19 @@ const Navbar = () => {
                 onClick={() => setActive(false)}
               />
             </CloseWrapper>
-            <Link to="/">
+            <Link to="/"  onClick={() => setActive(false)} >
               <span>HOME</span>
             </Link>
-            <Link to="/about/our-company-profile">
+            <Link to="/about/our-company-profile" onClick={() => setActive(false)} >
               <span>ABOUT US</span>
             </Link>
-            <Link to="/products">
+            <Link to="/products" onClick={() => setActive(false)}>
               <span>PRODUCTS</span>
             </Link>
-            <Link to="/events">
+            <Link to="/events" onClick={() => setActive(false)}>
               <span>EVENTS</span>
             </Link>
-            <Link to="/contact">
+            <Link to="/contact" onClick={() => setActive(false)}>
               <span>CONTACT</span>
             </Link>
           </NavMenu>
@@ -107,13 +107,17 @@ const NavContainer = styled.main`
       border-bottom: 3px solid var(--heading);
     }
   }
+  @media screen and (max-width: 550px) {
+    .navbar {
+      padding: 0 10px;
+    }
+  }
 `;
 
-const Nav = styled.nav`
-`;
+const Nav = styled.nav``;
 
 const NavWrapper = styled.div`
-z-index: 1001;
+  z-index: 1001;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -123,12 +127,18 @@ z-index: 1001;
   width: 100%;
   margin: 0 auto;
 
+  @media screen and (max-width: 550px) {
+    height: 70px;
+  }
 `;
 
 const Logo = styled.img`
   width: 200px;
   object-fit: contain;
   cursor: pointer;
+  @media screen and (max-width: 550px) {
+    width: 120px;
+  }
 `;
 
 const NavMenu = styled.div`
@@ -185,7 +195,7 @@ const NavMenu = styled.div`
 
     z-index: 1;
 
-    .a {
+    a {
       margin: 0 20px;
       padding: 30px 0;
       border-bottom: 3px solid var(--lightGreen);
@@ -204,8 +214,11 @@ const CustomMenu = styled(MenuIcon)`
   margin-right: 20px;
   cursor: pointer;
   transform: scale(1.3);
-
   display: none;
+  @media screen and (max-width: 550px) {
+    transform: scale(1);
+    margin-right: 0px;
+  }
 `;
 
 const CloseWrapper = styled.div`

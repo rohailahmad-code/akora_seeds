@@ -7,7 +7,7 @@ import Viewer from "../components/Viewer";
 const Products = () => {
   return (
     <React.Fragment>
-      <Viewer heading="Products" />
+      <Viewer heading="You press the products we do the rest" />
       <AllProducts />
       <Footer />
     </React.Fragment>

@@ -263,6 +263,9 @@ export default AllProducts;
 const ProductsContainer = styled.div`
   padding: 100px 0;
   position: relative;
+  @media screen and (max-width: 550px) {
+    padding: 50px 0;
+  }
 `;
 
 const Products = styled.div`
@@ -273,6 +276,11 @@ const Products = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 50px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
 `;
 
 const Heading = styled.div`
@@ -297,6 +305,17 @@ const Heading = styled.div`
       border-radius: 50%;
       left: 0;
       bottom: -5px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      margin: 0 70px;
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 35px;
     }
   }
 `;
@@ -358,6 +377,26 @@ const CardText = styled.div`
     line-height: 1.7;
     letter-spacing: 0.3px;
     margin: 10px 0 0 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    overflow-y: hidden;
+    height: 100%;
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    padding: 20px 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
   }
 `;
 

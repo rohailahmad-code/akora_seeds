@@ -47,7 +47,6 @@ const Data = styled.div`
   h1 {
     color: var(--heading);
     font-family: GilroyBold;
-    // font-weight: bold;
   }
 
   p {
@@ -55,5 +54,16 @@ const Data = styled.div`
     font-size: 18px;
     letter-spacing: 1.2px;
     font-family: Gilroy;
+  }
+  @media screen and (max-width: 550px) {
+    width: 90%;
+    padding: 25px 0;
+    h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 15px;
+    }
   }
 `

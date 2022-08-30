@@ -7,14 +7,21 @@ import "slick-carousel/slick/slick-theme.css";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const ProductsSection = () => {
-  let settings = {
+  let main_settings = {
     dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: true,
-    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -25,7 +32,7 @@ const ProductsSection = () => {
           <Heading>
             <h1>Products</h1>
           </Heading>
-          <Carousel {...settings}>
+          <Carousel {...main_settings}>
             <Wrap>
               <Card>
                 <img src="/images/Melon.jpg" alt="" />
@@ -236,22 +243,25 @@ export default ProductsSection;
 const ProductsContainer = styled.div`
   padding: 100px 0;
   position: relative;
+  @media screen and (max-width: 550px) {
+    padding: 30px 0;
+  }
 `;
 const ProductsBackground = styled.div`
   background-image: url(/images/leaves.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  //   background: #3c3b3f;
-  //   background: -webkit-linear-gradient(to left, #605c3c, #3c3b3f);
-  //   background: linear-gradient(to left, #605c3c, #3c3b3f);
   position: absolute;
   top: 450px;
-  //   top: 250px;
   left: 0;
   right: 0;
   height: 250px;
-  //   height: 400px;
+
+  @media screen and (max-width: 550px) {
+    height: 200px;
+    top: 400px;
+  }
 `;
 
 const Products = styled.div`
@@ -284,12 +294,17 @@ const Heading = styled.div`
       bottom: -5px;
     }
   }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 35px;
+    }
+  }
 `;
 
 const Carousel = styled(Slider)`
-    width: 90%!important;
-    margin: 0 auto;
-    ul li button {
+  width: 90% !important;
+  margin: 0 auto;
+  ul li button {
     &:before {
       font-size: 10px;
       color: var(--heading);
@@ -322,10 +337,22 @@ const Carousel = styled(Slider)`
   .slick-next:before {
     color: var(--heading);
   }
-  .slick-slide{
-    width
+  // .slick-slide{
+  //   width
+  // }
+  @media screen and (max-width: 550px) {
+    ul li button {
+      &:before {
+        font-size: 12px;
+      }
+    }
+    li.slick-active button::before {
+      font-size: 16px;
+    }
+    button {
+      transform: scale(1);
+    }
   }
-  
 `;
 
 const Wrap = styled.div`
@@ -334,6 +361,11 @@ const Wrap = styled.div`
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+  }
+  @media screen and (max-width: 550px) {
+    img {
+      height: 200px;
+    }
   }
 `;
 
@@ -375,6 +407,20 @@ const CardText = styled.div`
     letter-spacing: 0.2px;
     margin: 10px 0 0 0;
   }
+  @media screen and (max-width: 550px) {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    padding: 20px 10px;
+
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+  }
 `;
 
 const ReadMore = styled.button`
@@ -398,6 +444,10 @@ const ReadMore = styled.button`
     .CustomArrowIcon {
       color: var(--heading);
     }
+  }
+  @media screen and (max-width: 550px) {
+    right: 0;
+    bottom: 0;
   }
 `;
 

@@ -16,9 +16,7 @@ const Footer = () => {
           <LogoWrap>
             <Logo src="/images/akora-seeds-logo.png" />
             <p>
-              Doing Agriculture is not only a job, it is a passion too because
-              it is a source of food for humanity, and luckily we are been
-              selected for this good cause.
+              Our Evolution Starts With You.
             </p>
           </LogoWrap>
 
@@ -157,10 +155,20 @@ const FooterWrap = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 90px;
   align-content: center;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 40px 0px;
+  }
 `;
 
 const LogoWrap = styled.div`
   p {
+    margin-left: 5px;
     color: white;
     line-height: 1.7;
     letter-spacing: 1.2px;
@@ -251,6 +259,10 @@ const CopyrightContainer = styled.div`
   background: linear-gradient(to left, #605c3c, #3c3b3f);
 
   padding: 0 20px;
+
+  @media screen and (max-width: 550px) {
+    padding: 0px;
+  }
 `;
 
 const Copyright = styled.div`
@@ -263,6 +275,17 @@ const Copyright = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media screen and (max-width: 768px) {
+    align-items: row-reverse;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  @media screen and (max-width: 550px) {
+    span {
+      font-size: 14px;
+    }
+  }
 `;
 
 const Left = styled.div`

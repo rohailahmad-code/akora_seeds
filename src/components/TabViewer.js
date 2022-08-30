@@ -36,4 +36,20 @@ const BackgroundImg = styled.div`
     text-transform: uppercase;
     letter-spacing: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      width: 80%;
+      font-size : 35px ;
+      letter-spacing: 5px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    height: 200px;
+    h1 {
+      width: 90%;
+      font-size : 25px ;
+      letter-spacing: 5px;
+    }
+  }
 `

@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <React.Fragment>
-      <Viewer heading="About Us" />
+      <Viewer heading="Agriculture is what we do" />
       <ViewerContainer>
         <Wrapper>
           <Data>
@@ -50,7 +50,6 @@ const Wrapper = styled.div`
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  // margin-top: -200px;
 
   display: flex;
   flex-direction: column;
@@ -60,23 +59,12 @@ const Wrapper = styled.div`
 
   border-radius: 20px;
 
-  // height: 300px;
-
-  // background-image: url(/images/bg-img-1.jpg),
-  //   -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  // background-blend-mode: color;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
-  // position: relative;
-
   img {
-    // position: absolute;
-    // top: -70px;
-    // right: 50px;
-
     width: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    overflow-x: scroll;
   }
 `;
 
@@ -85,13 +73,11 @@ const Data = styled.div`
 `;
 
 const Tab = styled.div`
-  // margin-top: -30px;
-
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  // background-color: red;
+
   a {
     margin-right: 30px;
     cursor: pointer;
@@ -128,6 +114,22 @@ const Tab = styled.div`
       span:after {
         transform: scaleX(1);
         opacity: 1;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: -50px;
+    width: 900px;
+    overflow-x: scroll;
+  }
+  
+  @media screen and (max-width: 550px) {
+    height: 50px;
+    margin-left: -130px;
+    a {
+      span {
+        font-size: 14px;
       }
     }
   }

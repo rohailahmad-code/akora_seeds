@@ -63,6 +63,9 @@ const DataContainer = styled.div`
   max-width: 1440px;
   width: 65%;
   margin: auto;
+  @media screen and (max-width: 550px) {
+    width: 90%;
+  }
 `;
 const Data = styled.div`
   margin: 0 auto;
@@ -74,6 +77,7 @@ const Data = styled.div`
     border: 3px solid var(--heading);
     border-radius: 10px;
   }
+
 `;
 
 const OurMissionData = styled.div`
@@ -86,6 +90,18 @@ const OurMissionData = styled.div`
     font-family: Gilroy;
     line-height: 1.7;
     letter-spacing: 1px;
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+    ul {
+      padding-left: 15px;
+    }
+    ul li {
+      font-size: 15px;
+    }
   }
 `;
 

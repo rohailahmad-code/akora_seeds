@@ -30,14 +30,30 @@ const Image = styled.div`
   height: 350px;
   position: relative;
   h1 {
+    width: 50%;
+    text-align: center;
     color: var(--lightGreen);
-    font-size: 70px;
+    font-size: 50px;
     font-family: GilroyBold;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      width: 80%;
+      font-size : 35px ;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    height: 250px;
+    h1 {
+      width: 90%;
+      font-size : 30px ;
+    }
   }
 `;

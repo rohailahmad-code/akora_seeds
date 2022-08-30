@@ -109,6 +109,16 @@ const Heading = styled.div`
       bottom: -5px;
     }
   }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
 `;
 
 const Grid = styled.div`
@@ -116,6 +126,16 @@ const Grid = styled.div`
   grid-template-columns: repeat(3, 1fr);
 
   padding: 50px 0 100px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  @media screen and (max-width: 550px) {
+    text-align: center;
+    padding: 10px 0 100px;
+    margin: 0 20px;
+  }
 `;
 
 const Wrap = styled.div`
@@ -134,30 +154,48 @@ const Wrap = styled.div`
     font-family: Gilroy;
     font-weight: bold;
   }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 24px;
+      margin: 10px 0 10px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
 `;
 
 const CustomPhoneIcon = styled(PhoneIphoneIcon)`
   transform: scale(3.5);
   margin-bottom: 20px;
   color: var(--heading);
+  @media screen and (max-width: 550px) {
+    transform: scale(2);
+  }
 `;
 
 const CustomMailIcon = styled(EmailIcon)`
   transform: scale(3.5);
   margin-bottom: 20px;
   color: var(--heading);
+  @media screen and (max-width: 550px) {
+    transform: scale(2);
+  }
 `;
 
 const CustomLocationIcon = styled(LocationOnIcon)`
   transform: scale(3.5);
   margin-bottom: 20px;
   color: var(--heading);
+  @media screen and (max-width: 550px) {
+    transform: scale(2);
+  }
 `;
 
 const Wrapper = styled.div`
   width: 100;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   border: 1px solid var(--heading);
   border-radius: 10px;
 
@@ -226,11 +264,47 @@ const Wrapper = styled.div`
         color: var(--heading);
       }
     }
+    @media screen and (max-width: 768px) {
+      border-top: 1px solid var(--heading);
+    }
+    @media screen and (max-width: 550px) {
+      h1 {
+        font-size: 26px;
+      }
+      input {
+        ::placeholder {
+          font-size: 14px;
+        }
+      }
+      textarea {
+        ::placeholder {
+          font-size: 14px;
+        }
+      }
+      .Button {
+        width: 35%;
+        font-size: 14px;
+        padding: 8px 0;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 
 const GoogleMap = styled.div`
   iframe {
     border-radius: 10px 0 0 10px;
+  }
+  @media screen and (max-width: 768px) {
+    iframe {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    iframe {
+      height: 320px;
+    }
   }
 `;

@@ -172,6 +172,21 @@ const Carousel = styled(Slider)`
   .slick-next:before {
     color: var(--lightGreen);
   }
+
+  @media screen and (max-width: 550px) {
+    ul li button {
+      &:before {
+        top: -40px;
+      }
+    }
+    li.slick-active button::before {
+      font-size: 16px;
+      top: -40px;
+    }
+    button {
+      transform: scale(1);
+    }
+  }
 `;
 
 const Wrap = styled.div`
@@ -194,11 +209,6 @@ const Wrap = styled.div`
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     );
-    // background-image: linear-gradient(
-    //   to bottom right
-    //   rgba(25, 111, 61, 0.2),
-    //   rgba(253, 183, 19, 0.2)
-    // );
   }
 `;
 
@@ -238,12 +248,43 @@ const HeroText = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    top: 30%;
+    left: 10%;
+    p {
+      font-size: 20px;
+      width: 80%;
+
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 550px) {
+    top: 20%;
+    left: 12%;
+    p {
+      font-size: 18px;
+      width: 90%;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
 `;
 
 const CTA = styled.div`
   display: flex;
   gap: 70px;
   margin-left: 30px;
+  @media screen and (max-width: 550px) {
+    margin-left: 0px;
+    gap: 10px;
+    margin-top: 40px;
+  }
+ 
 `;
 const ContactButton = styled.button`
   a {
@@ -278,6 +319,8 @@ const ContactButton = styled.button`
     font-size: 10px;
     letter-spacing: 1.2px;
   }
+  @media screen and (max-width: 550px) {
+    padding: 8px 10px;
 `;
 
 const ReadMoreButton = styled(ContactButton)``;

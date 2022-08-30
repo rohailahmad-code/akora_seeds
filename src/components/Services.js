@@ -76,10 +76,11 @@ const ServicesContiner = styled.main`
   width: 100%;
   margin: 0 auto;
   padding: 100px 0;
+
+ 
 `
 
 const Heading = styled.div`
-  // padding: 50px 0;
   display: flex;
   justify-content: center;
   h1{
@@ -102,16 +103,29 @@ const Heading = styled.div`
       bottom: -5px;
     }
   }
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
 `
 
 const Wrap = styled.div`
-
+@media screen and (max-width: 768px) {
+  margin: 0 20px;
+}
 `
 const QualitySeeds = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `
 
 const Image = styled.div`
@@ -131,6 +145,14 @@ const Image = styled.div`
       transform: scale(1.1);
     }
   }
+
+  @media screen and (max-width: 550px) {
+    padding: 20px 0 0px;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
    
 `
 
@@ -141,6 +163,7 @@ const Text = styled.div`
   flex-direction: column;
 
   h2 {
+  
     font-size: 40px;
     color: var(--heading);
     position: relative;
@@ -160,20 +183,38 @@ const Text = styled.div`
   }
 
   p {
-    // font-size: 18px;
     font-family: Gilroy;
     line-height: 1.7;
     letter-spacing: .5px;
+  }
+
+  @media screen and (max-width: 768px) {
+     width: 100%;
+     text-align: center;
+     
+
+     h2 {
+      align-self: center;
+     }
+  }
+
+  @media screen and (max-width: 550px) {
+    h2 {
+      font-size: 30px;
+    }
+    p{
+      font-size: 15px;
+    }
   }
    
 `
 
 const CertifiedProducts = styled(QualitySeeds)`
+  
   flex-direction: row-reverse;
 
-  .CertifiedProductsImg{
-
-    
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `
 
