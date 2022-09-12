@@ -9,7 +9,7 @@ const Contact = () => {
     <React.Fragment>
       <Viewer heading="Get in touch" />
       <ContactComp />
-      <Footer />
+       
     </React.Fragment>
   );
 };

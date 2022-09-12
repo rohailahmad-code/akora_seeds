@@ -12,7 +12,7 @@ const Home = () => {
       <HeroSlider />
       <Services />
       <ProductsSection />
-      <Footer />
+       
     </Container>
   )
 }

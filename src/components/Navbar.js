@@ -52,6 +52,7 @@ const Navbar = () => {
             </Link>
           </NavMenu>
           <CustomMenu
+          className="HamburgerMenu"
             sx={{ display: { md: "none" } }}
             onClick={() => setActive(true)}
           />
@@ -97,6 +98,9 @@ const NavContainer = styled.main`
   }
 
   .navbar.active .CloseMenu {
+    color: var(--heading);
+  }
+  .navbar.active .HamburgerMenu {
     color: var(--heading);
   }
 

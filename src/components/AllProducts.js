@@ -15,7 +15,7 @@ const AllProducts = () => {
         <Products>
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="melon">
                 <img src="/images/Melon.jpg" alt="" />
               </Link>
               <CardText>
@@ -24,13 +24,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="melon">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -39,7 +37,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="bitter">
                 <img src="/images/Bitter Gourd.jpeg" alt="" />
               </Link>
               <CardText>
@@ -48,13 +46,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="bitter">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -63,7 +59,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="cabbage">
                 <img src="/images/Cabbage.jpg" alt="" />
               </Link>
               <CardText>
@@ -72,13 +68,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="cabbage">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -87,7 +81,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="cucumber">
                 <img src="/images/Cucumber 1.jpg" alt="" />
               </Link>
               <CardText>
@@ -96,13 +90,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="cucumber">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -111,7 +103,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="onion">
                 <img src="/images/Onion-Red.jpg" alt="" />
               </Link>
               <CardText>
@@ -120,13 +112,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="onion">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -135,7 +125,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="okra">
                 <img src="/images/Okra.jpg" alt="" />
               </Link>
               <CardText>
@@ -144,13 +134,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="okra">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -159,7 +147,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="pepper">
                 <img src="/images/Hot Pepper 2.jpg" alt="" />
               </Link>
               <CardText>
@@ -168,13 +156,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="pepper">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -183,7 +169,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="tomato">
                 <img src="/images/Determinate Tomato.jpg" alt="" />
               </Link>
               <CardText>
@@ -192,13 +178,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="tomato">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -207,7 +191,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="watermelon">
                 <img src="/images/Watermelon.jpg" alt="" />
               </Link>
               <CardText>
@@ -216,13 +200,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="watermelon">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -231,7 +213,7 @@ const AllProducts = () => {
 
           <Wrap>
             <Card>
-              <Link to="/">
+              <Link to="squash">
                 <img src="/images/Squash Long.jpg" alt="" />
               </Link>
               <CardText>
@@ -240,13 +222,11 @@ const AllProducts = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, sed fuga! At neque dolores sint, quibusdam vitae
                   soluta vero adipisci quos. Repudiandae nulla dignissimos ex
-                  aspernatur animi blanditiis hic reiciendis id nesciunt ab
-                  nostrum est, eaque odio iure inventore eligendi nobis, optio,
-                  amet nisi quas ratione ut! Tenetur, et cumque?
+                  
                 </p>
               </CardText>
               <ReadMore>
-                <Link to="/">
+                <Link to="squash">
                   <CustomArrowIcon className="CustomArrowIcon" />
                 </Link>
               </ReadMore>
@@ -270,7 +250,7 @@ const ProductsContainer = styled.div`
 
 const Products = styled.div`
   max-width: 1440px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 
   display: grid;
@@ -348,9 +328,8 @@ const Card = styled.div`
 `;
 
 const CardText = styled.div`
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 250px;
+   
+  height: 200px;
   padding: 20px;
   position: relative;
   :hover::-webkit-scrollbar {
@@ -374,6 +353,7 @@ const CardText = styled.div`
     margin: 0;
   }
   p {
+    font-family: GilRoy;
     line-height: 1.7;
     letter-spacing: 0.3px;
     margin: 10px 0 0 0;

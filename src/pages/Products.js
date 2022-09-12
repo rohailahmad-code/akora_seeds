@@ -9,7 +9,7 @@ const Products = () => {
     <React.Fragment>
       <Viewer heading="You press the products we do the rest" />
       <AllProducts />
-      <Footer />
+       
     </React.Fragment>
   );
 };

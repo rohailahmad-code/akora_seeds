@@ -33,7 +33,7 @@ const About = () => {
         </Wrapper>
         <Outlet />
       </ViewerContainer>
-      <Footer />
+      
     </React.Fragment>
   );
 };
